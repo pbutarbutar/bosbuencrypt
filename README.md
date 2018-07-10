@@ -1,0 +1,2 @@
+# bosbuencrypt
+Encrypt for QRCode
