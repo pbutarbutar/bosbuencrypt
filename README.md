@@ -1,7 +1,7 @@
 # bosbuencrypt
 Encrypt for QRCode
 
-<?php
+
 require_once "encryptv1.inc.php";
 $cryptoTDMS = new Tdmsencrypt();
 
@@ -15,5 +15,3 @@ $decrypt_str = $cryptoTDMS->decrypt($codeencrypted, $key_password);
 */
 $result_str = $decrypt_str;
 
-
-?>
