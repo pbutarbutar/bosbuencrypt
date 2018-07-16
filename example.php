@@ -1,6 +1,3 @@
-# bosbuencrypt
-Encrypt for QRCode
-
 <?php
 require_once "encryptv1.inc.php";
 $cryptoTDMS = new Tdmsencrypt();
