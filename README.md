@@ -8,7 +8,9 @@ require_once "encryptv1.inc.php";
 $cryptoTDMS = new Tdmsencrypt();
 
 $codeencrypted = "blablabla";
-$key_password = ""; // Secret Password. Can change at any time
+$key_password = ""; // Secret Password. Can change at any time. Password for development : 2OZo71f2q4ShraWppIyVeIV8e3Sjlq6To
+
+
 $decrypt_str = $cryptoTDMS->decrypt($codeencrypted, $key_password);
 
 Result format
