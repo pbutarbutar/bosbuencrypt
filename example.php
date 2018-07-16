@@ -8,7 +8,7 @@ $decrypt_str = $cryptoTDMS->decrypt($codeencrypted, $key_password);
 
 /*
 	Result format
-	#CUSTCODE#INVNUM#INVDATE#INVTOT-#ITEMCODE(1)#QTY-#ITEMCODE(2)#QTY#ITEMCODE(3)#QTY
+	#CUSTCODE#INVNUM#INVDATE#INVTOT-#ITEMCODE(1)#PART/SERVICE#QTY-#ITEMCODE(2)#PART/SERVICE/QTY#ITEMCODE(3)#PART/SERVICE#QTY
 */
 $result_str = $decrypt_str;
 
