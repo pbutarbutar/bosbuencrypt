@@ -18,7 +18,8 @@ $decrypt_str = $cryptoTDMS->decrypt($codeencrypted, $key_password);<br>
 
 Result format<br>
 #CUSTCODE#INVNUM#INVDATE#INVTOT|ITEMCODE(1)#PART/SERVICE#QTY|ITEMCODE(2)#PART/SERVICE/QTY|ITEMCODE(3)#PART/SERVICE#QTY
-Description: 
+<br><br>
+<b>Argument</b>: 
 # s/d INVTOT => Header Data
 |ITEMCODE(1) => Lines
 |ITEMCODE(2) => Lines
