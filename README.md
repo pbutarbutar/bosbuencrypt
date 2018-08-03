@@ -6,7 +6,7 @@ openssl_encrypt<br>
 (PHP 5 >= 5.3.0, PHP 7)
 openssl_encrypt — Encrypts data
 
-Start Php
+start Php
 require_once "encryptv1.inc.php";
 $cryptoTDMS = new Tdmsencrypt();
 
