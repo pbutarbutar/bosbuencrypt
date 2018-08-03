@@ -20,11 +20,13 @@ Result format<br>
 #CUSTCODE#INVNUM#INVDATE#INVTOT|ITEMCODE(1)#PART/SERVICE#QTY|ITEMCODE(2)#PART/SERVICE/QTY|ITEMCODE(3)#PART/SERVICE#QTY
 <br><br>
 <b>Argument</b>: 
+<pre>
 # s/d INVTOT => Header Data
 |ITEMCODE(1) => Lines
 |ITEMCODE(2) => Lines
 |ITEMCODE(3) => Lines
-
+</pre>
+</body>
 
 </html>
 
