@@ -17,7 +17,13 @@ $key_password = ""; // Secret Password. Can change at any time. Password for dev
 $decrypt_str = $cryptoTDMS->decrypt($codeencrypted, $key_password);<br>
 
 Result format<br>
-#CUSTCODE#INVNUM#INVDATE#INVTOT|ITEMCODE(1)#PART/SERVICE#QTY|ITEMCODE(2)#PART/SERVICE/QTY|ITEMCODE(3)#PART/SERVICE#QTY<br>
-$result_str = $decrypt_str;<br>
+#CUSTCODE#INVNUM#INVDATE#INVTOT|ITEMCODE(1)#PART/SERVICE#QTY|ITEMCODE(2)#PART/SERVICE/QTY|ITEMCODE(3)#PART/SERVICE#QTY
+Description: 
+# s/d INVTOT => Header Data
+|ITEMCODE(1) => Lines
+|ITEMCODE(2) => Lines
+|ITEMCODE(3) => Lines
+
+
 </html>
 
