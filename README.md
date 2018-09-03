@@ -8,13 +8,20 @@ openssl_encrypt — Encrypts data
 <br>
 
 require_once "encryptv1.inc.php";
-$cryptoTDMS = new Tdmsencrypt();
-$codeencrypted = "blablabla";
-$key_password = ""; // Secret Password. Can change at any time. Password for development : 2OZo71f2q4ShraWppIyVeIV8e3Sjlq6To
-$decrypt_str = $cryptoTDMS->decrypt($codeencrypted, $key_password);
+$tdmsencrypt = new Tdmsencrypt();
+$key_password = "2OZo71f2q4ShraWppIyVeIV8e3Sjlq6To";  
+//Password can change at any time. Password for development : 2OZo71f2q4ShraWppIyVeIV8e3Sjlq6To
+
+#To Encrypt String
+#String => #CUSTCODE#INVNUM#INVDATE#INVTOT|ITEMCODE(1)#PART/SERVICE#QTY|ITEMCODE(2)#PART/SERVICE/QTY|ITEMCODE(3)#PART/SERVICE#QTY
+$string_invoice = ""; 
+$string_encrypt = $tdmsencrypt->encrypt($string_invoice, $key_password);
 
 
-Result $decrypt_str
+#To Decrypt String
+$decrypt_str = $tdmsencrypt->decrypt($string_encrypt, $key_password);
+
+//Format hasil Decrypt 
 #CUSTCODE#INVNUM#INVDATE#INVTOT|ITEMCODE(1)#PART/SERVICE#QTY|ITEMCODE(2)#PART/SERVICE/QTY|ITEMCODE(3)#PART/SERVICE#QTY
 
 <b>Argument</b>: 
